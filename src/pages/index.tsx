@@ -33,7 +33,7 @@ const datasetDetails: DatasetDetail[] = [
     source:
       'https://community.d2l.com/brightspace/kb/articles/22812-content-service-data-sets',
     downloadUrl:
-      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQCT78GFCEruRaJnkZHxqOYOAZAJ727VSr6ByC5xsqo9-N4?e=NGamxC',
+      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQCT78GFCEruRaJnkZHxqOYOAZAJ727VSr6ByC5xsqo9-N4?e=NGamxC&download=1',
     description:
       'In the Audio Video Processed Brightspace Data Set, each row represents one completed media processing job. The data set captures events from January 2022 onwards.',
     dataDescription: [
@@ -235,7 +235,7 @@ const datasetDetails: DatasetDetail[] = [
     source:
       'https://community.d2l.com/brightspace/kb/articles/4525-discussions-data-sets',
     downloadUrl:
-      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQAfcmQzgq5LSrdh5uZXSZ76Ac5gxNQp29CVL0uRhI0e6Vo?e=MZQGEz',
+      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQAfcmQzgq5LSrdh5uZXSZ76Ac5gxNQp29CVL0uRhI0e6Vo?e=MZQGEz&download=1',
     description:
       'The Discussion Forums Brightspace Data Set returns discussion forums. Results are ordered from newest to oldest.',
     dataDescription: [
@@ -340,7 +340,8 @@ const datasetDetails: DatasetDetail[] = [
     id: 'gradeobjects',
     title: 'GradeObjects',
     source: 'https://community.d2l.com/brightspace/kb/articles/4527-grades-data-sets',
-    downloadUrl: 'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQClJhgZxqFtSYASwA26mNZhARoRq2EOiiPsY3XB4GHRB3c?e=4qncC3',
+    downloadUrl:
+      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQClJhgZxqFtSYASwA26mNZhARoRq2EOiiPsY3XB4GHRB3c?e=4qncC3&download=1',
     description:
       'The Grade Objects Brightspace Data Set returns a list of the grade objects created for your org units. The data set returns a NULL grade scheme value when the grade item is using the default scheme.',
     dataDescription: [
@@ -497,7 +498,7 @@ const datasetDetails: DatasetDetail[] = [
     source:
       'https://community.d2l.com/brightspace/kb/articles/4529-organizational-units-data-sets',
     downloadUrl:
-      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQD36UPIl_TFRrAH90YR8MWuAbnkUUvTaHoyD7YTWBZJmLk?e=n6kxEG',
+      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQD36UPIl_TFRrAH90YR8MWuAbnkUUvTaHoyD7YTWBZJmLk?e=n6kxEG&download=1',
     description:
       'The Organizational Units Brightspace Data Set returns details about all org units within your organization. Note: Backfill of historical is_deleted, deleted_date, and recycled_date values is determined by the date/time values in the org_unit audit log.',
     dataDescription: [
@@ -578,7 +579,8 @@ const datasetDetails: DatasetDetail[] = [
     id: 'quizobjects',
     title: 'QuizObjects',
     source: 'https://community.d2l.com/brightspace/kb/articles/4532-quizzes-data-sets',
-    downloadUrl: 'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQDaogeAQ1KLS5KBJCE6yGQmAd0U-wKIA4LMcjbD62dqeI4?e=h91WFb',
+    downloadUrl:
+    'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQDaogeAQ1KLS5KBJCE6yGQmAd0U-wKIA4LMcjbD62dqeI4?e=h91WFb&download=1',
     description:
       'The Quiz Objects Brightspace Data Set returns information about the settings and properties of a quiz.',
     dataDescription: [
@@ -774,7 +776,7 @@ const datasetDetails: DatasetDetail[] = [
     source:
       'https://community.d2l.com/brightspace/kb/articles/4533-release-conditions-data-sets',
     downloadUrl:
-      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQDq-AiT1wcqQ4qlRObGmzajAeNDdMXTr_OAY2wHo6HaAQk?e=KBo1cY',
+      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQDq-AiT1wcqQ4qlRObGmzajAeNDdMXTr_OAY2wHo6HaAQk?e=KBo1cY&download=1',
     description:
       'The Release Condition Objects Brightspace Data Set returns all the release conditions (prerequisites and results) that have been created in the organization.',
     dataDescription: [
@@ -854,7 +856,7 @@ const datasetDetails: DatasetDetail[] = [
     source:
       'https://community.d2l.com/brightspace/kb/articles/4534-role-details-data-sets',
     downloadUrl:
-      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQBlGMnBbKGvQrnKacduc89gAXn_TaQvauc3gbndVyGHhPY?e=P6aJ2Z',
+      'https://bcit365.sharepoint.com/:x:/s/proj-ltc-learninganalytics-team/IQBlGMnBbKGvQrnKacduc89gAXn_TaQvauc3gbndVyGHhPY?e=P6aJ2Z&download=1',
     description:
       'The Role Details Brightspace Data Set returns a full set of attributes for each role in your organization.',
     dataDescription: [
