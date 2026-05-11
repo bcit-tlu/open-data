@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://open-data.example.com',
+  url: 'https://open-data.latest.ltc.bcit.ca',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'bcit-ltc', // Usually your GitHub org/user name.
+  organizationName: 'bcit-tlu', // Usually your GitHub org/user name.
   projectName: 'open-data', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -99,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/bcit-ltc/open-data',
+              href: 'https://github.com/bcit-tlu/open-data',
             },
           ],
         },
