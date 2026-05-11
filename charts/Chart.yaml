@@ -1,0 +1,6 @@
+apiVersion: v2
+name: open-data
+description: Open Data Portal — a Docusaurus-based open data portal for learning analytics datasets.
+type: application
+version: 0.1.0
+appVersion: "0.1.0" # x-release-please-version
