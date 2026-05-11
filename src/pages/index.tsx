@@ -2,7 +2,6 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 type DatasetField = {
@@ -1011,17 +1010,6 @@ const datasetDetails: DatasetDetail[] = [
 
 const allDatasetsDownloadUrl =
   'https://bcit365.sharepoint.com/:u:/s/proj-ltc-learninganalytics-team/IQCbjbebNnjVQp4RkvcvtQ_eASKdjwYppgNQz4qLor0NAjQ?e=PE5W3A&download=1';
-
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={siteConfig.title}
-      description="Open data portal describing Brightspace datasets for research and analysis.">
-      <PortalContent />
-    </Layout>
-  );
-}
 
 export function PortalContent(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
