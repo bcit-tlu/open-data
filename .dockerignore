@@ -1,0 +1,33 @@
+# Version control
+.git
+.gitignore
+
+# Dependencies (rebuilt in container)
+node_modules
+
+# Build output (rebuilt in container)
+build
+.docusaurus
+
+# Deployment / CI artifacts
+charts
+.github
+.envrc
+shell.nix
+
+# Documentation / metadata
+*.md
+!docs/**/*.md
+!docs/**/*.mdx
+LICENSE
+VERSION
+CHANGELOG.md
+
+# Release-please
+release-please-config.json
+.release-please-manifest.json
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
