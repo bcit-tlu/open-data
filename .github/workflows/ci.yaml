@@ -24,9 +24,24 @@ permissions:
 jobs:
   # ── Quality gates ─────────────────────────────────────────
   #
-  # Helm lint runs on every push + PR as a parallel quality gate.
-  # Its failure breaks the workflow status but does not block the
-  # image build (surfaced via branch protection required check).
+  # Lint, test, and Helm lint run on every push + PR as parallel
+  # quality gates.  Their failure breaks the workflow status but
+  # does not block the image build (surfaced via branch protection
+  # required status checks).
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
 
   helm-lint:
     runs-on: ubuntu-latest
