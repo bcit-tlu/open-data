@@ -80,6 +80,14 @@ describe('datasets.json schema', () => {
       const d = dataset as DatasetDetail;
       const fieldNames = d.fields.map((f) => f.name);
       expect(new Set(fieldNames).size).toBe(fieldNames.length);
+
+      if (d.droppedFields && d.droppedFields.length > 0) {
+        const droppedNames = d.droppedFields.map((f) => f.name);
+        expect(new Set(droppedNames).size).toBe(droppedNames.length);
+
+        const overlap = fieldNames.filter((n) => droppedNames.includes(n));
+        expect(overlap).toEqual([]);
+      }
     },
   );
 });
