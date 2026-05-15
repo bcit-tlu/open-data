@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/bcit-tlu/open-data/compare/v0.1.1...v0.1.2) (2026-05-15)
+
+
+### Bug Fixes
+
+* use correct release-please output key for root package dispatch ([f045942](https://github.com/bcit-tlu/open-data/commit/f0459426a41bb5bae2c7eee1108573114648ef54))
+* use correct release-please output key for root package dispatch ([40c1f7d](https://github.com/bcit-tlu/open-data/commit/40c1f7d3e44ac8a4076744c44503cd26c7191a4c))
+
 ## [0.1.1](https://github.com/bcit-tlu/open-data/compare/v0.1.0...v0.1.1) (2026-05-11)
 
 
