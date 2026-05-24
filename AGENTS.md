@@ -58,8 +58,9 @@ helm template test charts/ | kubeconform -strict -summary \
 - **PR titles**: Must follow conventional commit format (enforced by CI)
 - **Branching**: `devin/<timestamp>-<description>`
 - **License**: MPL-2.0
-- **Versioning**: Managed by release-please; `VERSION` file is source of truth
-- **Chart appVersion**: Annotated with `# x-release-please-version`
+- **Versioning**: Managed by release-please; version tracked via `.release-please-manifest.json` and `# x-release-please-version` annotations in Chart.yaml
+- **Helm lint**: `helm lint charts/`
+- **Helm validate**: `helm template test charts/ | kubeconform -strict -summary -schema-location default -ignore-missing-schemas`
 
 ## CI/CD pipeline
 
