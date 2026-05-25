@@ -62,7 +62,15 @@ helm template test charts/ | kubeconform -strict -summary \
 - **Helm lint**: `helm lint charts/`
 - **Helm validate**: `helm template test charts/ | kubeconform -strict -summary -schema-location default -ignore-missing-schemas`
 
-## CI/CD pipeline
+## CI/CD
+
+- CI uses shared `bcit-tlu/.github` OCI build reusable workflow
+- `helm-lint` validates Helm charts on every push and PR
+- `release-please` manages versioning via conventional commits (`release-type: "simple"`)
+- Version is tracked in `.release-please-manifest.json` and `Chart.yaml` (`# x-release-please-version` annotations)
+- Images are published to `ghcr.io/bcit-tlu/open-data/open-data`
+- Charts are published to `oci://ghcr.io/bcit-tlu/open-data/charts`
+- `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true` is set in all workflows
 
 | Workflow            | Trigger              | Purpose                              |
 |---------------------|----------------------|--------------------------------------|
