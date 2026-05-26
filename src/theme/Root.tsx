@@ -1,15 +1,18 @@
-import React from 'react';
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import React, { lazy, Suspense } from 'react';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
-function AnalyticsWrapper({ children }: { children: React.ReactNode }) {
-  const { AnalyticsProvider } = require('../analytics/AnalyticsContext');
-  return <AnalyticsProvider>{children}</AnalyticsProvider>;
-}
+const AnalyticsProvider = lazy(() =>
+  import('../analytics/AnalyticsContext').then((m) => ({ default: m.AnalyticsProvider }))
+);
 
 export default function Root({ children }: { children: React.ReactNode }) {
+  const isBrowser = useIsBrowser();
+  if (!isBrowser) {
+    return <>{children}</>;
+  }
   return (
-    <BrowserOnly fallback={<>{children}</>}>
-      {() => <AnalyticsWrapper>{children}</AnalyticsWrapper>}
-    </BrowserOnly>
+    <Suspense fallback={<>{children}</>}>
+      <AnalyticsProvider>{children}</AnalyticsProvider>
+    </Suspense>
   );
 }

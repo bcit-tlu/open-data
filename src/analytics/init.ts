@@ -14,8 +14,7 @@ import { NavigationTimingInstrumentation } from '@opentelemetry/browser-instrume
 import { UserActionInstrumentation } from '@opentelemetry/browser-instrumentation/experimental/user-action';
 import { WebVitalsInstrumentation } from '@opentelemetry/browser-instrumentation/experimental/web-vitals';
 import { ErrorsInstrumentation } from '@opentelemetry/browser-instrumentation/experimental/errors';
-
-const VERSION = require('../../package.json').version;
+import { version as VERSION } from '../../package.json';
 
 export function initAnalytics(): void {
   const isProduction = process.env.NODE_ENV === 'production';
