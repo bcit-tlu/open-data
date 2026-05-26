@@ -5,6 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  clientModules: ['./src/analytics/clientModule.ts'],
   title: 'Open Learning Data',
   tagline: 'An open data portal for learning analytics research.',
   favicon: 'img/favicon.ico',
