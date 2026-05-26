@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/bcit-tlu/open-data/compare/v0.1.2...v0.1.3) (2026-05-25)
+
+
+### Reverts
+
+* restore SharePoint download URLs (revert [#13](https://github.com/bcit-tlu/open-data/issues/13)) ([2466178](https://github.com/bcit-tlu/open-data/commit/24661788c70084e08e44d2e303f47af17d0b96c8))
+
 ## [0.1.2](https://github.com/bcit-tlu/open-data/compare/v0.1.1...v0.1.2) (2026-05-15)
 
 
