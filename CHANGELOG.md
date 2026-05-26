@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/bcit-tlu/open-data/compare/v0.1.3...v0.2.0) (2026-05-26)
+
+
+### Features
+
+* add OpenTelemetry browser analytics with OTLP log export ([ee7496f](https://github.com/bcit-tlu/open-data/commit/ee7496f9c5c4d3239486632c1b01aa5c45be5167))
+
 ## [0.1.3](https://github.com/bcit-tlu/open-data/compare/v0.1.2...v0.1.3) (2026-05-25)
 
 
