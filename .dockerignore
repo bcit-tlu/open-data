@@ -27,6 +27,9 @@ CHANGELOG.md
 release-please-config.json
 .release-please-manifest.json
 
+# Azure Function (separate deployment)
+api
+
 # Docker
 docker-compose.yml
 Dockerfile
