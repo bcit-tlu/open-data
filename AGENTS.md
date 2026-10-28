@@ -86,4 +86,4 @@ helm template test charts/ | kubeconform -strict -summary \
 |-------------|----------------------------------------------|
 | Main push   | `sha-<fullsha>`, `<ver>-rc.<ts>.<short>`     |
 | Release     | `<version>`, `latest` (if highest stable)    |
-| PR build    | Built but NOT pushed                         |
+| PR build    | `sha-<head>`, `pr-<number>` — pushed for flux-fleet-v2 previews; deleted by `pr-image-cleanup.yaml` on PR close |
