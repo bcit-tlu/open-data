@@ -18,3 +18,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Azure Functions local settings (contains secrets for local dev)
+api/local.settings.json
+api/.python_packages
+api/__pycache__
