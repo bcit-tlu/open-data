@@ -1,5 +1,7 @@
 # AGENTS.md — Open Data Portal
 
+Tooling: every CLI this repo needs comes from `shell.nix`; run commands via `nix-shell --run` (or `direnv allow`) before concluding a tool is missing.
+
 ## Project overview
 
 Open Data Portal is a Docusaurus-based static site that publishes de-identified
@@ -54,6 +56,7 @@ helm template test charts/ | kubeconform -strict -summary \
 
 ## Conventions
 
+- Default PR loop (no need to be asked): after every push, wait until all checks — including Devin Review and github-code-quality — have finished, fix and resolve every thread (≤3 rounds), and only then report or admin-merge. An instruction to "admin-merge" never skips this wait.
 - **Commits**: Conventional Commits (`feat:`, `fix:`, `ci:`, etc.)
 - **PR titles**: Must follow conventional commit format (enforced by CI)
 - **Branching**: `devin/<timestamp>-<description>`
