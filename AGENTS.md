@@ -56,7 +56,7 @@ helm template test charts/ | kubeconform -strict -summary \
 
 ## Conventions
 
-- Default PR loop (no need to be asked): after every push, wait for all applicable checks — including Devin Review and github-code-quality when configured — to finish. Fix valid findings (≤3 rounds), explain false positives, and resolve every thread. Report success or admin-merge only once all applicable checks pass and all threads are resolved. If checks still fail or threads stay open after three rounds, stop and summarize the blocker for Kyle instead of merging. An instruction to "admin-merge" never skips this wait.
+- Default PR loop (no need to be asked): after every push, wait for all applicable checks — including Devin Review and github-code-quality when configured — to finish. Fix valid findings (≤3 rounds), explain false positives, and resolve every thread. Report success or admin-merge only once all applicable checks pass and all threads are resolved. If checks still fail or threads stay open after three rounds, stop and summarize the blocker for the user instead of merging. An instruction to "admin-merge" never skips this wait.
 - **Commits**: Conventional Commits (`feat:`, `fix:`, `ci:`, etc.)
 - **PR titles**: Must follow conventional commit format (enforced by CI)
 - **Branching**: `devin/<timestamp>-<description>`
